@@ -1,0 +1,16 @@
+{
+  "name": "tinyprice-codelab-practice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Práctica TinyPrice: Android, TinyFish y Supabase Cloud",
+  "scripts": {
+    "test": "deno test --allow-env supabase/functions/search-products/index.test.ts",
+    "check:backend": "deno check supabase/functions/search-products/index.ts",
+    "supabase": "supabase"
+  },
+  "devDependencies": {
+    "@google/gemini-cli": "^0.65.0",
+    "deno": "^2.9.6",
+    "supabase": "^2.121.0"
+  }
+}

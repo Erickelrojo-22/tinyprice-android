@@ -1,0 +1,71 @@
+{
+  "androidUnitSuites": [
+    {
+      "name": "com.apps.iatinyfish.data.repository.RemoteDealsRepositoryTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.apps.iatinyfish.presentation.deals.DealsViewModelTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.apps.iatinyfish.presentation.deals.SearchCancellationTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0"
+    }
+  ],
+  "androidUnitTests": 8,
+  "backendTests": {
+    "passed": 11,
+    "failed": 0,
+    "transport": "explicit mocked TinyFish transport; real request handler"
+  },
+  "apk": {
+    "name": "TinyPrice-demo.apk",
+    "bytes": 12557230,
+    "sha256": "6d4e0be964b0dc5457941c4fda57ffd38baf9819486df0834297f823fc3cf24a"
+  },
+  "cloudDeployed": false,
+  "cloudBlockers": [
+    "Supabase CLI not authenticated",
+    "TinyFish API key not supplied"
+  ],
+  "androidSkill": {
+    "sha256": "e1e25cd750da13b9c43196e7bd2a04d52eb3e2f381ba5b7da2b50009df0b3475",
+    "geminiDiscovered": true,
+    "modelActivationVerified": false
+  },
+  "instrumentation": {
+    "passed": 4,
+    "failed": 0,
+    "runner": "AndroidJUnitRunner via adb am instrument",
+    "device": "TinyPrice_Codelab_API23 / emulator-5580",
+    "api": 23,
+    "gradleUtp": "stopped after invalid recursive collection paths; direct runner passed"
+  },
+  "manualUi": {
+    "verified": [
+      "initial screen",
+      "empty-query validation",
+      "Nintendo Switch OLED search / 3 demo offers",
+      "Pixel Store detail",
+      "return to results"
+    ],
+    "screenshots": [
+      "01-inicio.png",
+      "02-validacion.png",
+      "03-resultados.png",
+      "04-detalle.png"
+    ],
+    "layoutTool": "uiautomator dump; Android CLI layout server unavailable on API23"
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 13
+  }
+}
