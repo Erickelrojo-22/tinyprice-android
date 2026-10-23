@@ -9,7 +9,7 @@ Proyecto de la práctica de Aplicaciones Móviles Nativas, preparado en la carpe
 - [Proyecto completo y evidencias en ZIP](https://github.com/Erickelrojo-22/tinyprice-android/releases/download/v1.0.0/TinyPrice-practica.zip).
 - [Versión publicada y sumas SHA-256](https://github.com/Erickelrojo-22/tinyprice-android/releases/tag/v1.0.0).
 
-Las descargas requieren acceso a este repositorio privado.
+El repositorio y las descargas son públicos y pueden consultarse sin iniciar sesión.
 
 ## Abrir y ejecutar
 
