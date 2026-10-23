@@ -2,7 +2,7 @@
 
 Fecha de trabajo: 22 de octubre de 2026, America/Guayaquil.
 
-Actualización final del 23 de octubre: el usuario eligió su organización y se creó TinyPrice en el plan cotizado de $0/mes. La función está desplegada, la clave de TinyFish está guardada como secreto y la búsqueda real devolvió 9 resultados tanto por HTTP como desde Android. La sesión existente de Google se intentó con Gemini CLI 0.65.0 (también la versión publicada en npm), pero el servicio respondió `UNSUPPORTED_CLIENT` / `IneligibleTierError`; únicamente la activación de la skill mediante ese modelo sigue sin verificarse.
+Actualización final del 23 de octubre: el usuario eligió su organización y se creó TinyPrice en el plan cotizado de $0/mes. La función está desplegada, la clave de TinyFish está guardada como secreto y la búsqueda real devolvió 9 resultados tanto por HTTP como desde Android. La actividad de skills se adaptó a Antigravity CLI, reemplazo oficial recomendado por Google: el agente leyó completamente la skill y confirmó autor y comando. Gemini CLI antiguo conserva su rechazo de acceso personal. Los detalles y los límites de tiempo de las comprobaciones están en actividad-skills.md.
 
 ## Resultado local comprobado
 
@@ -22,7 +22,7 @@ Actualización final del 23 de octubre: el usuario eligió su organización y se
 | 2 | Arquitectura | Implementada y descrita en design.md y README.md. |
 | 3 | TinyFish: cuenta y clave | Sesión disponible y clave existente configurada en Supabase sin exponerla. No se acreditan promociones ni saldo. |
 | 4 | TinyFish Search | Búsqueda real HTTP 200 y 9 resultados con fuentes; cloud-real-search.json. |
-| 5 | Entorno Android y skill | Herramientas y skill instaladas; descubrimiento verificado. Google rechaza Gemini CLI con UNSUPPORTED_CLIENT; activación por modelo no completada. |
+| 5 | Entorno Android y skill | Adaptado a Antigravity CLI 1.4.4: consulta completa de la skill confirmada por el registro de read_file; autor y comando correctos. Gemini CLI literal sigue rechazado por Google. |
 | 6 | Configurar proyecto | Proyecto Gradle completo, API 23 mínima y SDK 37 de compilación. |
 | 7 | Modelo y repositorios | Demo y remoto implementados, con fuentes web conservadas. |
 | 8 | Estado y ViewModel | Implementados; regresiones de cancelación reproducidas y corregidas. |

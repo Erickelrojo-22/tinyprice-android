@@ -49,4 +49,4 @@ Files: README.md, docs/estado-practica.md, docs/evidence, dist.
 
 ## Cierre
 
-Trabajo local y despliegue real completos y verificados el 23 de octubre. Proyecto TinyPrice creado en el plan cotizado de $0/mes tras la selección expresa de organización. Función y secreto configurados; búsqueda HTTP y Android con 9 resultados reales. El cliente Gemini del curso es rechazado por Google con UNSUPPORTED_CLIENT y esa actividad se registra como impedimento externo; la app y su backend funcionan.
+Trabajo local y despliegue real completos y verificados el 23 de octubre. Proyecto TinyPrice creado en el plan cotizado de $0/mes tras la selección expresa de organización. Función y secreto configurados; búsqueda HTTP y Android con 9 resultados reales. La actividad de skills se adaptó a Antigravity CLI, reemplazo oficial de Google: lectura íntegra de la skill y respuesta con autor/comando verificadas. La restauración del acceso personal al cliente Gemini retirado no se declara realizada.

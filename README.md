@@ -99,7 +99,7 @@ $androidCli = "$env:USERPROFILE\AppData\AndroidCLI\android.exe"
 npx gemini skills list
 ```
 
-En la versión instalada, el identificador `android-cli` debe especificarse; el comando sin nombre mostrado en el codelab responde “Must specify at least one skill”. La skill se descubre correctamente. La invocación con la sesión existente de Google devolvió `UNSUPPORTED_CLIENT` / `IneligibleTierError` del servicio para Gemini CLI 0.65.0, que también era la versión publicada en npm al comprobarla. La activación mediante modelo no se declara completada; este impedimento no afecta al APK ni a TinyFish/Supabase.
+En la versión instalada, el identificador `android-cli` debe especificarse; el comando sin nombre mostrado en el codelab responde “Must specify at least one skill”. Google retiró el acceso personal a Gemini CLI el 18 de junio de 2026 y recomienda Antigravity CLI. En esta computadora, Antigravity 1.4.4 respondió con la sesión existente y leyó íntegramente la skill oficial, confirmando autor y comando para dispositivos. La actividad se adaptó al reemplazo oficial; el cliente antiguo continúa rechazando el acceso personal. Consulta [la adaptación y sus evidencias](docs/actividad-skills.md), incluidos los límites de tiempo de las comprobaciones.
 
 ## Archivos de interés
 

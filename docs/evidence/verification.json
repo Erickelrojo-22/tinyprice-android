@@ -36,8 +36,11 @@
   "androidSkill": {
     "sha256": "e1e25cd750da13b9c43196e7bd2a04d52eb3e2f381ba5b7da2b50009df0b3475",
     "geminiDiscovered": true,
-    "modelActivationVerified": false,
-    "modelActivationBlocker": "Gemini CLI 0.65.0: IneligibleTierError / UNSUPPORTED_CLIENT from service using existing OAuth credentials; npm latest is also 0.65.0"
+    "modelActivationVerified": true,
+    "legacyGeminiError": "Gemini CLI 0.65.0: IneligibleTierError / UNSUPPORTED_CLIENT from service using existing OAuth credentials; npm latest is also 0.65.0",
+    "activationClient": "Antigravity CLI 1.4.4; full SKILL.md read completed",
+    "manualSlashConfirmationCompleted": false,
+    "replacementEvidence": "antigravity-skill-verification.json"
   },
   "instrumentation": {
     "passed": 6,
