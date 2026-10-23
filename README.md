@@ -2,6 +2,15 @@
 
 Proyecto de la práctica de Aplicaciones Móviles Nativas, preparado en la carpeta `IATinyFish`. Basado en el [codelab del docente](https://epanchanaf.github.io/tinyprice-codelab/) y su referencia completa; consultar [procedencia](docs/provenance.md).
 
+## Descargas
+
+- [APK conectado a TinyFish y Supabase](https://github.com/Erickelrojo-22/tinyprice-android/releases/download/v1.0.0/TinyPrice-live.apk).
+- [APK de demostración sin Internet](https://github.com/Erickelrojo-22/tinyprice-android/releases/download/v1.0.0/TinyPrice-demo.apk).
+- [Proyecto completo y evidencias en ZIP](https://github.com/Erickelrojo-22/tinyprice-android/releases/download/v1.0.0/TinyPrice-practica.zip).
+- [Versión publicada y sumas SHA-256](https://github.com/Erickelrojo-22/tinyprice-android/releases/tag/v1.0.0).
+
+Las descargas requieren acceso a este repositorio privado.
+
 ## Abrir y ejecutar
 
 En Android Studio, abre **esta carpeta**, espera la sincronización de Gradle y selecciona un emulador o teléfono autorizado. Pulsa **Run**. Por defecto la app usa la función remota ya desplegada en el proyecto TinyPrice. `dist/TinyPrice-live.apk` es la versión conectada y `dist/TinyPrice-demo.apk` conserva datos ficticios para practicar sin Internet.
