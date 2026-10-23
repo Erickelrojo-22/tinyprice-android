@@ -1,4 +1,4 @@
-"""Package project sources, compact evidence and the verified demo APK."""
+"""Package project sources, compact evidence and verified APK variants."""
 from pathlib import Path
 import hashlib
 import zipfile
@@ -9,6 +9,10 @@ dist.mkdir(exist_ok=True)
 apk = dist / "TinyPrice-demo.apk"
 if not apk.is_file():
     raise SystemExit("Build the demo APK before exporting the delivery.")
+apks = [apk]
+live_apk = dist / "TinyPrice-live.apk"
+if live_apk.is_file():
+    apks.append(live_apk)
 
 root_files = [
     ".gitignore", "README.md", "build.gradle.kts", "settings.gradle.kts",
@@ -38,12 +42,13 @@ archive = dist / "TinyPrice-practica.zip"
 with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as output:
     for path in sorted(set(files)):
         output.write(path, str(Path("IATinyFish") / path.relative_to(root)))
-    output.write(apk, "IATinyFish/dist/TinyPrice-demo.apk")
+    for artifact in apks:
+        output.write(artifact, "IATinyFish/dist/" + artifact.name)
 
 checksums = []
-for path in [apk, archive]:
+for path in [*apks, archive]:
     checksums.append(f"{hashlib.sha256(path.read_bytes()).hexdigest()}  {path.name}")
 (dist / "SHA256SUMS.txt").write_text("\n".join(checksums) + "\n", encoding="ascii")
 print(f"Delivery: {archive}")
-print(f"Source/evidence files: {len(set(files))}; demo APK included")
+print(f"Source/evidence files: {len(set(files))}; APK variants included: {len(apks)}")
 print(f"Archive bytes: {archive.stat().st_size}")

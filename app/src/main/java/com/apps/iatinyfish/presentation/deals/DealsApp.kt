@@ -1,5 +1,6 @@
 package com.apps.iatinyfish.presentation.deals
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import androidx.activity.compose.BackHandler
@@ -44,6 +45,10 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -132,6 +137,7 @@ private fun DealsSearchScreen(state: DealsUiState, onEvent: (DealsEvent) -> Unit
         } else {
             DiscoveryHome(
                 topPadding = padding.calculateTopPadding(),
+                isPreviewData = state.isPreviewData,
                 onSuggestion = { onEvent(DealsEvent.UseSuggestion(it)) },
             )
         }
@@ -139,13 +145,13 @@ private fun DealsSearchScreen(state: DealsUiState, onEvent: (DealsEvent) -> Unit
 }
 
 @Composable
-private fun DiscoveryHome(topPadding: androidx.compose.ui.unit.Dp, onSuggestion: (String) -> Unit) {
+private fun DiscoveryHome(topPadding: androidx.compose.ui.unit.Dp, isPreviewData: Boolean, onSuggestion: (String) -> Unit) {
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
         contentPadding = PaddingValues(start = 20.dp, top = topPadding + 8.dp, end = 20.dp, bottom = 28.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp),
     ) {
-        item { HeroCard() }
+        item { HeroCard(isPreviewData) }
         item {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 Text("Prueba una búsqueda", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
@@ -166,7 +172,7 @@ private fun DiscoveryHome(topPadding: androidx.compose.ui.unit.Dp, onSuggestion:
 }
 
 @Composable
-private fun HeroCard() {
+private fun HeroCard(isPreviewData: Boolean) {
     Card(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(28.dp),
@@ -178,7 +184,7 @@ private fun HeroCard() {
                 .padding(24.dp),
         ) {
             Surface(color = Color.White.copy(alpha = .18f), shape = RoundedCornerShape(99.dp)) {
-                Text("DEMO · BÚSQUEDA DE OFERTAS", Modifier.padding(horizontal = 10.dp, vertical = 5.dp), color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold, letterSpacing = .8.sp)
+                Text(if (isPreviewData) "DEMO · BÚSQUEDA DE OFERTAS" else "BÚSQUEDA WEB DE OFERTAS", Modifier.padding(horizontal = 10.dp, vertical = 5.dp), color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold, letterSpacing = .8.sp)
             }
             Spacer(Modifier.height(18.dp))
             Text("Encuentra la mejor compra sin abrir diez pestañas.", style = MaterialTheme.typography.headlineSmall, color = Color.White, fontWeight = FontWeight.ExtraBold, lineHeight = 30.sp)
@@ -313,6 +319,7 @@ private fun Tag(text: String, highlighted: Boolean) {
 @Composable
 private fun DealDetailScreen(offer: ProductOffer, onBack: () -> Unit) {
     val context = LocalContext.current
+    var sourceUnavailable by remember(offer.sourceUrl) { mutableStateOf(false) }
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
         topBar = {
@@ -359,10 +366,18 @@ private fun DealDetailScreen(offer: ProductOffer, onBack: () -> Unit) {
                 Spacer(Modifier.height(12.dp))
                 TextButton(
                     onClick = {
-                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(offer.sourceUrl)))
+                        try {
+                            context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(offer.sourceUrl)))
+                            sourceUnavailable = false
+                        } catch (_: ActivityNotFoundException) {
+                            sourceUnavailable = true
+                        }
                     },
                 ) {
                     Text("Abrir fuente web")
+                }
+                if (sourceUnavailable) {
+                    Text("No hay un navegador disponible para abrir esta fuente.", color = MaterialTheme.colorScheme.error)
                 }
             }
         }

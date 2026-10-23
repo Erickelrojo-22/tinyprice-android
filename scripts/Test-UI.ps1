@@ -14,7 +14,7 @@ try {
     New-Item -ItemType Directory -Path 'docs\evidence' -Force | Out-Null
     [IO.File]::WriteAllText((Join-Path (Get-Location) 'docs\evidence\instrumentation-results.txt'), $text, [Text.UTF8Encoding]::new($false))
     Write-Host $text
-    if ($exitCode -ne 0 -or $text -notmatch 'OK \(4 tests\)' -or $text -match 'FAILURES!!!|INSTRUMENTATION_FAILED') {
-        throw 'Las cuatro pruebas de interfaz no terminaron correctamente. Consulta docs/evidence/instrumentation-results.txt.'
+    if ($exitCode -ne 0 -or $text -notmatch 'OK \(6 tests\)' -or $text -match 'FAILURES!!!|INSTRUMENTATION_FAILED') {
+        throw 'Las seis pruebas de interfaz no terminaron correctamente. Consulta docs/evidence/instrumentation-results.txt.'
     }
 } finally { Pop-Location }

@@ -1,4 +1,4 @@
-INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: numtests=6
 
 INSTRUMENTATION_STATUS: stream=
 
@@ -14,7 +14,7 @@ INSTRUMENTATION_STATUS: current=1
 
 INSTRUMENTATION_STATUS_CODE: 1
 
-INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: numtests=6
 
 INSTRUMENTATION_STATUS: stream=.
 
@@ -28,7 +28,35 @@ INSTRUMENTATION_STATUS: current=1
 
 INSTRUMENTATION_STATUS_CODE: 0
 
-INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: numtests=6
+
+INSTRUMENTATION_STATUS: stream=
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+
+INSTRUMENTATION_STATUS: test=remoteHomeLabelsTheWebSearchMode
+
+INSTRUMENTATION_STATUS: class=com.apps.iatinyfish.presentation.deals.DealsAppTest
+
+INSTRUMENTATION_STATUS: current=2
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=6
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+
+INSTRUMENTATION_STATUS: test=remoteHomeLabelsTheWebSearchMode
+
+INSTRUMENTATION_STATUS: class=com.apps.iatinyfish.presentation.deals.DealsAppTest
+
+INSTRUMENTATION_STATUS: current=2
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: numtests=6
 
 INSTRUMENTATION_STATUS: stream=
 
@@ -38,11 +66,11 @@ INSTRUMENTATION_STATUS: test=demoSearchOpensDetailsAndReturnsToResults
 
 INSTRUMENTATION_STATUS: class=com.apps.iatinyfish.presentation.deals.DealsAppTest
 
-INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: current=3
 
 INSTRUMENTATION_STATUS_CODE: 1
 
-INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: numtests=6
 
 INSTRUMENTATION_STATUS: stream=.
 
@@ -52,11 +80,11 @@ INSTRUMENTATION_STATUS: test=demoSearchOpensDetailsAndReturnsToResults
 
 INSTRUMENTATION_STATUS: class=com.apps.iatinyfish.presentation.deals.DealsAppTest
 
-INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: current=3
 
 INSTRUMENTATION_STATUS_CODE: 0
 
-INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: numtests=6
 
 INSTRUMENTATION_STATUS: stream=
 
@@ -66,11 +94,11 @@ INSTRUMENTATION_STATUS: test=blankSearchShowsValidation
 
 INSTRUMENTATION_STATUS: class=com.apps.iatinyfish.presentation.deals.DealsAppTest
 
-INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: current=4
 
 INSTRUMENTATION_STATUS_CODE: 1
 
-INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: numtests=6
 
 INSTRUMENTATION_STATUS: stream=.
 
@@ -80,11 +108,39 @@ INSTRUMENTATION_STATUS: test=blankSearchShowsValidation
 
 INSTRUMENTATION_STATUS: class=com.apps.iatinyfish.presentation.deals.DealsAppTest
 
-INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: current=4
 
 INSTRUMENTATION_STATUS_CODE: 0
 
-INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: numtests=6
+
+INSTRUMENTATION_STATUS: stream=
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+
+INSTRUMENTATION_STATUS: test=missingBrowserShowsAnExplanationInsteadOfCrashing
+
+INSTRUMENTATION_STATUS: class=com.apps.iatinyfish.presentation.deals.DealsAppTest
+
+INSTRUMENTATION_STATUS: current=5
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=6
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+
+INSTRUMENTATION_STATUS: test=missingBrowserShowsAnExplanationInsteadOfCrashing
+
+INSTRUMENTATION_STATUS: class=com.apps.iatinyfish.presentation.deals.DealsAppTest
+
+INSTRUMENTATION_STATUS: current=5
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: numtests=6
 
 INSTRUMENTATION_STATUS: stream=
 
@@ -94,11 +150,11 @@ INSTRUMENTATION_STATUS: test=remoteErrorShowsTheRetryAction
 
 INSTRUMENTATION_STATUS: class=com.apps.iatinyfish.presentation.deals.DealsAppTest
 
-INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: current=6
 
 INSTRUMENTATION_STATUS_CODE: 1
 
-INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: numtests=6
 
 INSTRUMENTATION_STATUS: stream=.
 
@@ -108,7 +164,7 @@ INSTRUMENTATION_STATUS: test=remoteErrorShowsTheRetryAction
 
 INSTRUMENTATION_STATUS: class=com.apps.iatinyfish.presentation.deals.DealsAppTest
 
-INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: current=6
 
 INSTRUMENTATION_STATUS_CODE: 0
 
@@ -116,11 +172,11 @@ INSTRUMENTATION_RESULT: stream=
 
 
 
-Time: 8.589
+Time: 7.296
 
 
 
-OK (4 tests)
+OK (6 tests)
 
 
 

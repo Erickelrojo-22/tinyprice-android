@@ -27,14 +27,12 @@
   },
   "apk": {
     "name": "TinyPrice-demo.apk",
-    "bytes": 12557230,
-    "sha256": "6d4e0be964b0dc5457941c4fda57ffd38baf9819486df0834297f823fc3cf24a"
+    "bytes": 12571496,
+    "sha256": "e3b184df1051193af3c5dcccb7908947f577d84d7390942a76aa01dca1222bff",
+    "signatureVerified": true
   },
-  "cloudDeployed": false,
-  "cloudBlockers": [
-    "Supabase organization selection requested before project creation",
-    "TinyFish API key not supplied"
-  ],
+  "cloudDeployed": true,
+  "cloudBlockers": [],
   "androidSkill": {
     "sha256": "e1e25cd750da13b9c43196e7bd2a04d52eb3e2f381ba5b7da2b50009df0b3475",
     "geminiDiscovered": true,
@@ -42,7 +40,7 @@
     "modelActivationBlocker": "Gemini CLI 0.65.0: IneligibleTierError / UNSUPPORTED_CLIENT from service using existing OAuth credentials; npm latest is also 0.65.0"
   },
   "instrumentation": {
-    "passed": 4,
+    "passed": 6,
     "failed": 0,
     "runner": "AndroidJUnitRunner via adb am instrument",
     "device": "TinyPrice_Codelab_API23 / emulator-5580",
@@ -55,13 +53,21 @@
       "empty-query validation",
       "Nintendo Switch OLED search / 3 demo offers",
       "Pixel Store detail",
-      "return to results"
+      "return to results",
+      "live remote search / 9 web results",
+      "live detail with source URL",
+      "web browser launched for actual source",
+      "return to 9 live results"
     ],
     "screenshots": [
       "01-inicio.png",
       "02-validacion.png",
       "03-resultados.png",
-      "04-detalle.png"
+      "04-detalle.png",
+      "06-supabase-secret.png",
+      "07-live-inicio.png",
+      "08-live-resultados.png",
+      "09-live-detalle.png"
     ],
     "layoutTool": "uiautomator dump; Android CLI layout server unavailable on API23"
   },
@@ -72,8 +78,41 @@
   "cloudAccess": {
     "checkedDate": "2026-10-23",
     "supabaseConnectorConnected": true,
-    "existingProjects": 0,
-    "organizationSelectionRequested": true,
-    "tinyFishKeyPresent": false
-  }
+    "projectRef": "rnecwhzsgdinkjkbwhop",
+    "region": "us-east-1",
+    "projectStatus": "ACTIVE_HEALTHY",
+    "organizationSelectedByUser": true,
+    "quotedMonthlyCost": 0,
+    "tinyFishSecretConfigured": true
+  },
+  "cloudFunction": {
+    "slug": "search-products",
+    "version": 1,
+    "status": "ACTIVE",
+    "verifyJwt": false,
+    "url": "https://rnecwhzsgdinkjkbwhop.supabase.co/functions/v1/search-products"
+  },
+  "realSearch": {
+    "httpStatus": 200,
+    "query": "Nintendo Switch OLED",
+    "offers": 9,
+    "androidApi23AlsoVerified": true,
+    "sourceBrowserActivity": "com.android.browser/.BrowserActivity",
+    "returnToResultsVerified": true
+  },
+  "apks": [
+    {
+      "name": "TinyPrice-demo.apk",
+      "bytes": 12571496,
+      "sha256": "e3b184df1051193af3c5dcccb7908947f577d84d7390942a76aa01dca1222bff",
+      "signatureVerified": true
+    },
+    {
+      "name": "TinyPrice-live.apk",
+      "bytes": 12571515,
+      "sha256": "94b88cd60acdbc67404d8d2ea19659cfe17079cbbfc91c9d8315c3b35a77b8b6",
+      "signatureVerified": true
+    }
+  ],
+  "reviewMinorFindingsResolved": true
 }

@@ -49,4 +49,4 @@ Files: README.md, docs/estado-practica.md, docs/evidence, dist.
 
 ## Cierre
 
-Trabajo local completo y verificado. El despliegue real sigue pendiente de credenciales. Task 3 acredita comprobar el acceso y preparar el script alternativo, no un despliegue.
+Trabajo local y despliegue real completos y verificados el 23 de octubre. Proyecto TinyPrice creado en el plan cotizado de $0/mes tras la selección expresa de organización. Función y secreto configurados; búsqueda HTTP y Android con 9 resultados reales. El cliente Gemini del curso es rechazado por Google con UNSUPPORTED_CLIENT y esa actividad se registra como impedimento externo; la app y su backend funcionan.

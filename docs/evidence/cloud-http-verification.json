@@ -1,0 +1,34 @@
+{
+  "url": "https://rnecwhzsgdinkjkbwhop.supabase.co/functions/v1/search-products",
+  "results": [
+    {
+      "name": "preflight",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "body": "ok"
+    },
+    {
+      "name": "wrong_method",
+      "status": 405,
+      "expected": 405,
+      "passed": true,
+      "body": "{\"error\":\"Usa una solicitud POST para buscar.\"}"
+    },
+    {
+      "name": "invalid_query",
+      "status": 400,
+      "expected": 400,
+      "passed": true,
+      "body": "{\"error\":\"La búsqueda debe tener entre 2 y 200 caracteres.\"}"
+    },
+    {
+      "name": "provider_configuration",
+      "status": 503,
+      "expected": 503,
+      "passed": true,
+      "body": "{\"code\":\"TINYFISH_NOT_CONFIGURED\",\"error\":\"La búsqueda en vivo aún no está configurada.\"}"
+    }
+  ],
+  "phase": "Initial deployed endpoint, before configuring TinyFish secret. Successful configured search is in cloud-real-search.json."
+}

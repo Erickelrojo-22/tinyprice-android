@@ -4,7 +4,7 @@ Proyecto de la práctica de Aplicaciones Móviles Nativas, preparado en la carpe
 
 ## Abrir y ejecutar
 
-En Android Studio, abre **esta carpeta**, espera la sincronización de Gradle y selecciona un emulador o teléfono autorizado. Pulsa **Run**. Por defecto la app utiliza **datos ficticios identificados como demostración**.
+En Android Studio, abre **esta carpeta**, espera la sincronización de Gradle y selecciona un emulador o teléfono autorizado. Pulsa **Run**. Por defecto la app usa la función remota ya desplegada en el proyecto TinyPrice. `dist/TinyPrice-live.apk` es la versión conectada y `dist/TinyPrice-demo.apk` conserva datos ficticios para practicar sin Internet.
 
 Desde PowerShell, situado en esta carpeta:
 
@@ -50,7 +50,9 @@ La implementación local permite recorrer búsqueda, resultados, detalle, regres
 
 ## Activar la integración real
 
-Este código no incluye credenciales, cuentas creadas ni una URL remota verificada. El estado exacto se registra en [estado de la práctica](docs/estado-practica.md). Para completar los pasos alojados necesitas una cuenta propia de Supabase, un proyecto y la API key de TinyFish obtenida siguiendo el enlace del codelab.
+La integración ya está desplegada en `https://rnecwhzsgdinkjkbwhop.supabase.co/functions/v1/search-products`. Se comprobó una búsqueda real de Nintendo Switch OLED: HTTP 200 y 9 resultados con enlaces de origen. La clave se almacena como secreto de Supabase y queda fuera del código, APK y ZIP. El estado exacto se registra en [estado de la práctica](docs/estado-practica.md).
+
+Los siguientes pasos son una alternativa para repetir el despliegue por CLI en otro proyecto; el despliegue actual se realizó mediante la integración y el panel oficial:
 
 1. Crea el proyecto en Supabase y copia su **Reference ID**.
 2. Inicia sesión con `npx supabase login`.
@@ -84,7 +86,7 @@ Los tests del backend ejecutan el manejador real con el transporte de TinyFish s
 
 Las pruebas Android verifican estado, repositorios, cancelación y navegación de interfaz. Los resultados de cada ejecución se guardan en `docs/evidence/`; los reportes completos de Gradle se generan bajo `app/build/reports/`.
 
-La verificación final pasó 8 tests unitarios, 11 del backend y 4 de interfaz en API 23. `Test-UI.ps1` usa AndroidJUnitRunner directamente por ADB: el recolector UTP de Gradle produjo rutas recursivas inválidas en este AVD antiguo y se detuvo. Las capturas reales de inicio, validación, resultados y detalle están en `docs/evidence/`.
+La verificación final pasó 8 tests unitarios, 11 del backend y 6 de interfaz en API 23. `Test-UI.ps1` usa AndroidJUnitRunner directamente por ADB: el recolector UTP de Gradle produjo rutas recursivas inválidas en este AVD antiguo y se detuvo. Las capturas de demostración y de la integración real están en `docs/evidence/`.
 
 ## Actividad de skills
 
@@ -97,7 +99,7 @@ $androidCli = "$env:USERPROFILE\AppData\AndroidCLI\android.exe"
 npx gemini skills list
 ```
 
-En la versión instalada, el identificador `android-cli` debe especificarse; el comando sin nombre mostrado en el codelab responde “Must specify at least one skill”. En una sesión autenticada de Gemini, revisa el proyecto y usa `/trust`, `/skills reload` y `/skills list` para completar la actividad interactiva del curso.
+En la versión instalada, el identificador `android-cli` debe especificarse; el comando sin nombre mostrado en el codelab responde “Must specify at least one skill”. La skill se descubre correctamente. La invocación con la sesión existente de Google devolvió `UNSUPPORTED_CLIENT` / `IneligibleTierError` del servicio para Gemini CLI 0.65.0, que también era la versión publicada en npm al comprobarla. La activación mediante modelo no se declara completada; este impedimento no afecta al APK ni a TinyFish/Supabase.
 
 ## Archivos de interés
 

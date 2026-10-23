@@ -1,0 +1,154 @@
+{
+  "url": "https://rnecwhzsgdinkjkbwhop.supabase.co/functions/v1/search-products",
+  "status": 200,
+  "payload": {
+    "query": "Nintendo Switch OLED",
+    "offers": [
+      {
+        "id": "1-https://www.nintendo.com/es-mx/switch/oled-model/?srsltid=AYCX9vIbglvj5-uDewDtoA8CDkBVTvTxREZt7O3-ikhBRArRh4bicuvJ",
+        "store": "www.nintendo.com",
+        "productName": "Nintendo Switch – Modelo OLED",
+        "price": "Ver en fuente",
+        "originalPrice": null,
+        "shipping": "Consulta en tienda",
+        "delivery": "Disponibilidad por confirmar",
+        "rating": "—",
+        "sourceUrl": "https://www.nintendo.com/es-mx/switch/oled-model/?srsltid=AYCX9vIbglvj5-uDewDtoA8CDkBVTvTxREZt7O3-ikhBRArRh4bicuvJ",
+        "summary": "La nueva consola cuenta con una vibrante pantalla OLED de 7 pulgadas (17.78 cm), un soporte ajustable y amplio, una base con puerto LAN para conexión por cable, ...",
+        "tags": [
+          "Resultado web"
+        ],
+        "isBestValue": false
+      },
+      {
+        "id": "2-https://listado.mercadolibre.com.ec/consolas-y-videojuegos/consolas/nintendo-switch-oled",
+        "store": "listado.mercadolibre.com.ec",
+        "productName": "Nintendo Switch Oled | MercadoLibre.com.ec",
+        "price": "Ver en fuente",
+        "originalPrice": null,
+        "shipping": "Consulta en tienda",
+        "delivery": "Disponibilidad por confirmar",
+        "rating": "—",
+        "sourceUrl": "https://listado.mercadolibre.com.ec/consolas-y-videojuegos/consolas/nintendo-switch-oled",
+        "summary": "Nintendo Switch OLED HEG-001 (JPN) 64GB The Legend of Zelda: Tears of the Kingdom color dorado 2023. US$450. 1 opción de compra.",
+        "tags": [
+          "Resultado web"
+        ],
+        "isBestValue": false
+      },
+      {
+        "id": "3-https://www.tecnovo.com.ec/shop/consola-nintendo-switch-oled-7-64gb-blanco-654",
+        "store": "www.tecnovo.com.ec",
+        "productName": "Consola NINTENDO Switch Oled 7\" 64GB Blanco",
+        "price": "Ver en fuente",
+        "originalPrice": null,
+        "shipping": "Consulta en tienda",
+        "delivery": "Disponibilidad por confirmar",
+        "rating": "—",
+        "sourceUrl": "https://www.tecnovo.com.ec/shop/consola-nintendo-switch-oled-7-64gb-blanco-654",
+        "summary": "☞ CPU/GPU: Procesador Tegra NVIDIA. ☞ Incluye Consola, base Switch Blanca, Joy‑Con (2), Correas del control Joy‑Con (2), armazón para controles, ...",
+        "tags": [
+          "Resultado web"
+        ],
+        "isBestValue": false
+      },
+      {
+        "id": "4-https://www.nintendo.com/es-es/Hardware/Familia-Nintendo-Switch/Nintendo-Switch-Modelo-OLED/Nintendo-Switch-Modelo-OLED-2000984.html?srsltid=AYCX9vKP4X8KY6qAl7my56nNthb3U9rBGjl50DqDcwe-QYQSi1sTpQND",
+        "store": "www.nintendo.com",
+        "productName": "Nintendo Switch – Modelo OLED | Hardware",
+        "price": "Ver en fuente",
+        "originalPrice": null,
+        "shipping": "Consulta en tienda",
+        "delivery": "Disponibilidad por confirmar",
+        "rating": "—",
+        "sourceUrl": "https://www.nintendo.com/es-es/Hardware/Familia-Nintendo-Switch/Nintendo-Switch-Modelo-OLED/Nintendo-Switch-Modelo-OLED-2000984.html?srsltid=AYCX9vKP4X8KY6qAl7my56nNthb3U9rBGjl50DqDcwe-QYQSi1sTpQND",
+        "summary": "Nintendo Switch – Modelo OLED incluye pantalla OLED de 7 pulgadas, soporte ancho ajustable, base con puerto LAN, 64 GB de memoria y audio optimizado.",
+        "tags": [
+          "Resultado web"
+        ],
+        "isBestValue": false
+      },
+      {
+        "id": "5-https://www.instagram.com/p/CryvW7uuBTU/",
+        "store": "www.instagram.com",
+        "productName": "🔝🔝Adquiere tu Nintendo Switch Oled🎮🎮 en cualquiera de ...",
+        "price": "Ver en fuente",
+        "originalPrice": null,
+        "shipping": "Consulta en tienda",
+        "delivery": "Disponibilidad por confirmar",
+        "rating": "—",
+        "sourceUrl": "https://www.instagram.com/p/CryvW7uuBTU/",
+        "summary": "NINTENDO SWITCH 2 ¡AHORA POR SOLO $570! ✓ Consola de última generación ✓ Diversión en casa o donde quieras ✓ Compra segura y ...",
+        "tags": [
+          "Resultado web"
+        ],
+        "isBestValue": false
+      },
+      {
+        "id": "6-https://www.novicompu.com/nintendo-switch-modelo-oled/p",
+        "store": "www.novicompu.com",
+        "productName": "Nintendo Switch (Modelo OLED)",
+        "price": "Ver en fuente",
+        "originalPrice": null,
+        "shipping": "Consulta en tienda",
+        "delivery": "Disponibilidad por confirmar",
+        "rating": "—",
+        "sourceUrl": "https://www.novicompu.com/nintendo-switch-modelo-oled/p",
+        "summary": "Pantalla OLED de alta calidad con colores más intensos y mejor contraste. 64 GB de almacenamiento interno, expandible mediante tarjetas microSD, microSDHC y ...",
+        "tags": [
+          "Resultado web"
+        ],
+        "isBestValue": false
+      },
+      {
+        "id": "7-https://www.facebook.com/smartzone593/posts/nintendo-switch-oled-ll%C3%A9valo-a-tan-solo-330precio-oferta-efectivo-o-transferenci/1111520590993692/",
+        "store": "www.facebook.com",
+        "productName": "Nintendo Switch Oled Llévalo a tan solo $330 ✅Precio ...",
+        "price": "Ver en fuente",
+        "originalPrice": null,
+        "shipping": "Consulta en tienda",
+        "delivery": "Disponibilidad por confirmar",
+        "rating": "—",
+        "sourceUrl": "https://www.facebook.com/smartzone593/posts/nintendo-switch-oled-ll%C3%A9valo-a-tan-solo-330precio-oferta-efectivo-o-transferenci/1111520590993692/",
+        "summary": "Muy bella Nintendo Switch Oled ✨ Precio $3500",
+        "tags": [
+          "Resultado web"
+        ],
+        "isBestValue": false
+      },
+      {
+        "id": "8-https://www.xataka.com/videojuegos/comparativa-nintendo-switch-oled-vs-nintendo-switch",
+        "store": "www.xataka.com",
+        "productName": "Nintendo Switch (OLED) vs. Nintendo Switch, comparativa",
+        "price": "Ver en fuente",
+        "originalPrice": null,
+        "shipping": "Consulta en tienda",
+        "delivery": "Disponibilidad por confirmar",
+        "rating": "—",
+        "sourceUrl": "https://www.xataka.com/videojuegos/comparativa-nintendo-switch-oled-vs-nintendo-switch",
+        "summary": "La Nintendo Switch (OLED) es una Nintendo Switch con una pantalla más grande y un par de mejoras, pero a efectos prácticos es la misma consola.",
+        "tags": [
+          "Resultado web"
+        ],
+        "isBestValue": false
+      },
+      {
+        "id": "9-https://www.facebook.com/ZCORP.EC/videos/nintendo-switch-oled-con-magia-ecuador-galapagogames/1375491623954266/",
+        "store": "www.facebook.com",
+        "productName": "Nintendo switch oled con magia #ecuador🇪🇨 #galapagogames",
+        "price": "Ver en fuente",
+        "originalPrice": null,
+        "shipping": "Consulta en tienda",
+        "delivery": "Disponibilidad por confirmar",
+        "rating": "—",
+        "sourceUrl": "https://www.facebook.com/ZCORP.EC/videos/nintendo-switch-oled-con-magia-ecuador-galapagogames/1375491623954266/",
+        "summary": "Viví una. 00:43. ¡La nueva Nintendo Switch 2 ya está disponible en ...",
+        "tags": [
+          "Resultado web"
+        ],
+        "isBestValue": false
+      }
+    ],
+    "searchedAt": "2026-10-23T13:28:06.319Z"
+  }
+}
