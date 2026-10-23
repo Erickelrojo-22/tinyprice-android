@@ -21,3 +21,7 @@ Verificación final: 8 tests Android unitarios y 11 del backend correctos. Lint:
 Emulador: el recolector UTP produjo rutas recursivas inválidas; se detuvieron únicamente los procesos identificados de nuestra ejecución. La suite real pasó sus 4 tests con AndroidJUnitRunner directo. Se comprobaron manualmente inicio, consulta vacía, tres resultados demo de Nintendo, detalle Pixel Store y regreso. Cuatro capturas inspeccionadas visualmente. No se abrió una fuente ficticia ni se afirmó búsqueda real.
 
 Entrega: el exportador incluye app/build.gradle.kts explícitamente y excluye logs, credenciales, cachés y rutas de diagnóstico.
+
+2026-10-23: Supabase conectado mediante integración; list_projects devuelve cero proyectos y list_organizations devuelve una organización. Se pidió su selección, requisito del proveedor antes de crear un proyecto. TinyFish abierto en la página de claves y redirige a inicio de sesión; no hay clave local. La autenticación CLI Supabase continúa ausente, pero la integración ofrece otra vía de despliegue.
+
+Gemini CLI: se intentó usar las credenciales existentes con configuración temporal del proyecto. El servidor respondió IneligibleTierError / UNSUPPORTED_CLIENT para Code Assist individual. npm confirma 0.65.0 como versión publicada. No se declara activación de la skill ni se cambia de producto sin acuerdo. Se retiró la configuración temporal; no se leyeron ni imprimieron los secretos OAuth.

@@ -32,13 +32,14 @@
   },
   "cloudDeployed": false,
   "cloudBlockers": [
-    "Supabase CLI not authenticated",
+    "Supabase organization selection requested before project creation",
     "TinyFish API key not supplied"
   ],
   "androidSkill": {
     "sha256": "e1e25cd750da13b9c43196e7bd2a04d52eb3e2f381ba5b7da2b50009df0b3475",
     "geminiDiscovered": true,
-    "modelActivationVerified": false
+    "modelActivationVerified": false,
+    "modelActivationBlocker": "Gemini CLI 0.65.0: IneligibleTierError / UNSUPPORTED_CLIENT from service using existing OAuth credentials; npm latest is also 0.65.0"
   },
   "instrumentation": {
     "passed": 4,
@@ -67,5 +68,12 @@
   "lint": {
     "errors": 0,
     "warnings": 13
+  },
+  "cloudAccess": {
+    "checkedDate": "2026-10-23",
+    "supabaseConnectorConnected": true,
+    "existingProjects": 0,
+    "organizationSelectionRequested": true,
+    "tinyFishKeyPresent": false
   }
 }

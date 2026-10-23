@@ -2,6 +2,8 @@
 
 Fecha de trabajo: 22 de octubre de 2026, America/Guayaquil.
 
+Actualización del 23 de octubre: Supabase quedó conectado mediante la integración y se comprobó una organización sin proyectos. Se solicitó elegir esa organización antes de crear TinyPrice. TinyFish sigue mostrando inicio de sesión y no se ha proporcionado su clave. La sesión existente de Google se intentó con Gemini CLI 0.65.0 (también la versión publicada en npm), pero el servicio respondió `UNSUPPORTED_CLIENT` / `IneligibleTierError`; la activación mediante modelo sigue sin verificarse.
+
 ## Resultado local comprobado
 
 - APK de demostración generado en `dist/TinyPrice-demo.apk`.
@@ -25,17 +27,17 @@ Fecha de trabajo: 22 de octubre de 2026, America/Guayaquil.
 | 7 | Modelo y repositorios | Demo y remoto implementados, con fuentes web conservadas. |
 | 8 | Estado y ViewModel | Implementados; regresiones de cancelación reproducidas y corregidas. |
 | 9 | Interfaz Compose | Implementada; APK ejecutado, 4 tests instrumentados y recorrido manual correctos. |
-| 10 | Cuenta Supabase por correo | No se pudo verificar la cuenta: la CLI no está autenticada. |
-| 11 | Proyecto Supabase Cloud | No se creó ni se eligió un proyecto sin acceso autenticado. |
+| 10 | Cuenta Supabase por correo | Acceso a la cuenta verificado mediante la integración conectada; no se acredita el método de registro. |
+| 11 | Proyecto Supabase Cloud | Organización detectada, sin proyectos. Pendiente de selección de organización solicitada al usuario. |
 | 12 | Edge Function | Código local, tipos y 11 tests correctos. |
-| 13 | Secreto y despliegue | Bloqueado por falta de sesión Supabase y API key de TinyFish. |
+| 13 | Secreto y despliegue | Supabase conectado; pendientes organización para crear el proyecto y API key de TinyFish. |
 | 14 | Conectar Android | Cliente remoto preparado. La URL real se activa solamente después de verificar el backend. |
 | 15 | Probar y diagnosticar | 8 pruebas unitarias, 11 del backend y 4 de interfaz correctas; resultados en verification.json y capturas en evidence. |
 | 16 | Publicar y continuar | Entrega local preparada. Publicar en Google Play es opcional y no se realizó. |
 
 ## Qué falta para terminar la parte alojada
 
-Autenticar Supabase con `npx supabase login`, disponer de un proyecto y de una API key de TinyFish. Los permisos de archivos ya permitieron crear y probar todo el código local; no proporcionan una identidad autenticada en esos servicios.
+Confirmar la organización Supabase para crear el proyecto y disponer de una API key de TinyFish. La integración Supabase ya está conectada y permite desplegar la función; para usar el script CLI también se necesita `npx supabase login`. Los permisos de archivos no proporcionan la clave de TinyFish.
 
 El script `scripts/Complete-Cloud.ps1` está preparado para enlazar, guardar el secreto mediante un archivo temporal, desplegar, comprobar una búsqueda real y generar el APK remoto. Su sintaxis se verificó, pero **no se ha ejecutado ni validado contra un proyecto real**.
 
